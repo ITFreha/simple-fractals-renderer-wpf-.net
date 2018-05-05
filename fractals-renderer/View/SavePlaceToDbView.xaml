@@ -1,0 +1,16 @@
+﻿<Window MaxWidth="300" MinWidth="300" MaxHeight="150" MinHeight="150" x:Class="fractals_renderer.SavePlaceToDbView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fractals_renderer"
+        mc:Ignorable="d"
+        Icon="/Icon/save.ico"
+        Title="Сохранить текущее место в базу" Height="150" Width="300">
+    
+    <StackPanel>
+        <Label Margin="15,0,0,0">Название метки</Label>
+        <TextBox Width="250" Height="20" Text="{Binding Path=Name}"/>
+        <Button Width="250" Margin="10" FontSize="20" Command="{Binding SavePlaceCommand}">Сохранить</Button>
+    </StackPanel>
+</Window>
